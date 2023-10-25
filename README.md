@@ -2,6 +2,7 @@
 Using deep learning to automate the detection and analysis of exoplanets through light curve and spectral data
 
 1. Introduction
+   
 In the vastness of the cosmos, a fundamental question persists: Are we alone? Humanity has tirelessly pursued the quest to unravel signs of life beyond our planet. This exploration comprises two vital tasks: identifying exoplanets, including those potentially habitable, and studying their atmospheric properties through spectroscopy to assess habitability. This project focuses on the initial phase — discovering exoplanets. Historically, this has been a laborious endeavor, resulting in the detection of only approximately 4000 exoplanets over two decades. However, leveraging machine learning can automate and expedite this process significantly.
 
 Exoplanets, planets beyond our solar system, reveal themselves through a technique known as transit photometry. As an exoplanet orbits its host star, it intermittently obstructs a portion of the star's light, causing a momentary dip in light intensity. Analyzing the depth and duration of these light dips aids in identifying and confirming exoplanets, providing valuable insights into their presence and characteristics within distant star systems. NASA has diligently collected this data using the Kepler Space Telescope, making it publicly available. This dataset serves as the foundation for automating exoplanet detection through machine learning and deep learning techniques.
