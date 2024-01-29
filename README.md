@@ -181,6 +181,8 @@ the realm of exoplanet detection.
    
    **8.2. Workflow Diagram**
    
+   ![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/10b3884f-5585-4a95-823c-d154a477af81)
+
    The workflow of the model involves a systematic pipeline to address the challenges and
    intricacies of exoplanet detection:
    
@@ -239,7 +241,9 @@ the realm of exoplanet detection.
    Kepler mission data to pinpoint potentially habitable exoplanets. Each star is labeled with a
    binary classification: 2 indicates a confirmed presence of at least one exoplanet, including
    observations of multi-planet systems as shown in the figure 1.
-   
+
+   ![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/4c965817-fd37-412c-b395-614802de5b65)
+
    Figure 1. NASA Kepler Flux Intensity Dataset Snippet
    
    **9.2. Detailed Design of Features**
@@ -283,7 +287,9 @@ the realm of exoplanet detection.
       only 37 instances are labeled as exoplanets (1). This imbalance underscores the need for
       cautious model training to prevent potential biases and ensure a fair representation of
       both classes.
-      
+
+      ![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/14b3d29b-9b34-4c7f-8ff9-e63dded09dab)
+
       Figure 2. 0: Not Exoplanet; 1: Exoplanet
       
       ● Visual insights into the label distribution are provided through a countplot and a pie chart,
@@ -292,7 +298,9 @@ the realm of exoplanet detection.
       exoplanets, emphasizing the pronounced prevalence of the non-exoplanet class,
       accounting for 99.3% of the dataset. This observation underscores the importance of
       adopting appropriate strategies to address class imbalance during model development.
-      
+
+      ![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/81b95687-f32e-4cc3-9e32-84cac0e5ff12)
+
       Figure 3. Correlation in the data
       
       ● Additionally, a correlation matrix is examined to elucidate potential relationships
@@ -302,7 +310,13 @@ the realm of exoplanet detection.
       the unique challenges associated with astronomical datasets, where consecutive
       measurements lack direct influence, limiting the applicability of traditional correlation
       analyses.
+
       
+      ![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/e7d4c753-9b52-4c98-8827-0a43c783d06c)
+
+      ![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/33896172-4f79-4613-83e2-edf247c128a2)
+
+
       Figure 4. Distribution of Flux
       
       ● Further exploration involves a visual inspection of the flux readings for the first row,
@@ -312,7 +326,9 @@ the realm of exoplanet detection.
       periodic reductions in the received flux. While some anomalies from detection errors are
       still visible, the overall observation suggests the influence of orbiting planets on the light
       intensity curves.
-      
+
+      ![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/25765427-1d63-4abb-b915-7c815a61a36c)
+
       Figure 5. Distribution of Flux for outlier removal
       
       ● Outliers are observed in the flux distributions and then removed, in order to prevent them
@@ -325,7 +341,9 @@ the realm of exoplanet detection.
    a robust predictive model.
 
    **10.2. Graph Model with Explanation**
-   
+
+      ![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/422728cb-9f5a-45e6-ade9-6b2b28e8be8f)
+
       Figure 6. Graph Model
       
       ● In the graphical depiction, the Input Layer is illustrated with 64 neurons, each represented
@@ -439,7 +457,9 @@ the realm of exoplanet detection.
       ● This crucial step ensures uniformity in feature scales, mitigating the risk of certain
       features exerting undue influence over others during subsequent machine learning model
       training.
-      
+
+      ![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/7ab0ce85-9331-4143-b7de-4ddfefaab269)
+
       Figure 6. Exoplanet Dataset Explained Variance
       
       ● Subsequent to feature scaling, dimensionality reduction takes place using Principal
@@ -524,10 +544,23 @@ below for reference.
 
 Performance report:
 ● K Nearest Neighbors
+![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/95bf0fdf-62e2-4475-9846-5b4977550aa5)
+
 ● Logistic Regression
+![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/749acfdf-2228-4397-aeea-937932d3e872)
+
 ● Decision Tree
+![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/ea5a95b6-5420-4fd6-b081-5dc618ef0277)
+
 ● Random Forest
+![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/ba112899-d513-449f-b3a3-b34f84e7feea)
+
 ● XGBoost
+![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/20b64fa4-d4ab-4465-bc61-569f0430096e)
+
 ● Bernoulli Naive Bayes
+![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/7d9ac486-84c9-49c0-8f19-4e2fe6e35147)
+
 ● Artificial Neural Network
+![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/d18d6ba8-b19d-4612-835c-e7012a4a48d8)
 
