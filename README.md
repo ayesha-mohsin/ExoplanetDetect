@@ -170,6 +170,7 @@ the realm of exoplanet detection.
    
    The workflow of the model involves a systematic pipeline to address the challenges and
    intricacies of exoplanet detection:
+   
       ● Data Loading and Exploration:
          ○ Data is loaded from the NASA Kepler space telescope dataset, consisting of flux
          readings and labels indicating the presence or absence of exoplanets.
@@ -228,6 +229,7 @@ the realm of exoplanet detection.
    
    During the initial phase, the steps involved in feature engineering and data preprocessing
    implemented are as outlined below.
+   
       ● Handling Missing Values: Strategies to deal with missing data were implemented,
       ensuring a comprehensive dataset for model training.
       ● Outlier Detection and Removal: Outliers were identified and addressed to prevent them
@@ -248,41 +250,42 @@ the realm of exoplanet detection.
    
 **10. Analysis of Data**
    **10.1. Data Pre-Processing**
+   The following data pre-processing steps were implemented: 
    
-   ● The dataset under consideration comprises 5087 instances, each characterized by 3198
-   features, encompassing flux readings denoted as FLUX.1 to FLUX.3197, along with a
-   binary label indicating the presence (1) or absence (0) of exoplanets.
-   ● However, a notable observation made is the profound class imbalance within the labels,
-   with a substantial majority of instances (5050) classified as non-exoplanets (0), while
-   only 37 instances are labeled as exoplanets (1). This imbalance underscores the need for
-   cautious model training to prevent potential biases and ensure a fair representation of
-   both classes.
-   Figure 2. 0: Not Exoplanet; 1: Exoplanet
-   ● Visual insights into the label distribution are provided through a countplot and a pie chart,
-   shedding light on the disproportionate representation of exoplanet and non-exoplanet
-   instances. The visualizations reveal that a mere 0.7% of instances are identified as
-   exoplanets, emphasizing the pronounced prevalence of the non-exoplanet class,
-   accounting for 99.3% of the dataset. This observation underscores the importance of
-   adopting appropriate strategies to address class imbalance during model development.
-   Figure 3. Correlation in the data
-   ● Additionally, a correlation matrix is examined to elucidate potential relationships
-   between different flux readings. However, owing to the independent nature of flux
-   measurements at distinct time intervals and the transient characteristics of astronomical
-   phenomena, the correlation matrix fails to yield meaningful insights. This underscores
-   the unique challenges associated with astronomical datasets, where consecutive
-   measurements lack direct influence, limiting the applicability of traditional correlation
-   analyses.
-   Figure 4. Distribution of Flux
-   ● Further exploration involves a visual inspection of the flux readings for the first row,
-   emphasizing periodic patterns across different stars. Clear periodic patterns are observed
-   in all the exoplanet plots, indicating consistent fluctuations in the flux. These patterns are
-   attributed to the presence of a planet orbiting in front of the respective stars, causing
-   periodic reductions in the received flux. While some anomalies from detection errors are
-   still visible, the overall observation suggests the influence of orbiting planets on the light
-   intensity curves.
-   Figure 5. Distribution of Flux for outlier removal
-   ● Outliers are observed in the flux distributions and then removed, in order to prevent them
-   from negatively influencing the performance.
+      ● The dataset under consideration comprises 5087 instances, each characterized by 3198
+      features, encompassing flux readings denoted as FLUX.1 to FLUX.3197, along with a
+      binary label indicating the presence (1) or absence (0) of exoplanets.
+      ● However, a notable observation made is the profound class imbalance within the labels,
+      with a substantial majority of instances (5050) classified as non-exoplanets (0), while
+      only 37 instances are labeled as exoplanets (1). This imbalance underscores the need for
+      cautious model training to prevent potential biases and ensure a fair representation of
+      both classes.
+      Figure 2. 0: Not Exoplanet; 1: Exoplanet
+      ● Visual insights into the label distribution are provided through a countplot and a pie chart,
+      shedding light on the disproportionate representation of exoplanet and non-exoplanet
+      instances. The visualizations reveal that a mere 0.7% of instances are identified as
+      exoplanets, emphasizing the pronounced prevalence of the non-exoplanet class,
+      accounting for 99.3% of the dataset. This observation underscores the importance of
+      adopting appropriate strategies to address class imbalance during model development.
+      Figure 3. Correlation in the data
+      ● Additionally, a correlation matrix is examined to elucidate potential relationships
+      between different flux readings. However, owing to the independent nature of flux
+      measurements at distinct time intervals and the transient characteristics of astronomical
+      phenomena, the correlation matrix fails to yield meaningful insights. This underscores
+      the unique challenges associated with astronomical datasets, where consecutive
+      measurements lack direct influence, limiting the applicability of traditional correlation
+      analyses.
+      Figure 4. Distribution of Flux
+      ● Further exploration involves a visual inspection of the flux readings for the first row,
+      emphasizing periodic patterns across different stars. Clear periodic patterns are observed
+      in all the exoplanet plots, indicating consistent fluctuations in the flux. These patterns are
+      attributed to the presence of a planet orbiting in front of the respective stars, causing
+      periodic reductions in the received flux. While some anomalies from detection errors are
+      still visible, the overall observation suggests the influence of orbiting planets on the light
+      intensity curves.
+      Figure 5. Distribution of Flux for outlier removal
+      ● Outliers are observed in the flux distributions and then removed, in order to prevent them
+      from negatively influencing the performance.
    In conclusion, the dataset exhibited intricate patterns and challenges, including class imbalance
    and the unique characteristics of astronomical data. These nuances necessitated careful
    consideration during model development, where strategies for addressing class imbalance and
@@ -316,6 +319,7 @@ the realm of exoplanet detection.
    **11.1. Pseudocode**
    
    The following pseudocode provides a high-level overview of the steps involved in the project.
+   
       # Exoplanet Detection Pseudocode
       # Step 1: Initialize Project Setup
       Install necessary libraries
