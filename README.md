@@ -288,9 +288,9 @@ the realm of exoplanet detection.
       cautious model training to prevent potential biases and ensure a fair representation of
       both classes.
 
-      ![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/14b3d29b-9b34-4c7f-8ff9-e63dded09dab)
+![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/14b3d29b-9b34-4c7f-8ff9-e63dded09dab)
 
-      Figure 2. 0: Not Exoplanet; 1: Exoplanet
+Figure 2. 0: Not Exoplanet; 1: Exoplanet
       
       ● Visual insights into the label distribution are provided through a countplot and a pie chart,
       shedding light on the disproportionate representation of exoplanet and non-exoplanet
@@ -299,9 +299,9 @@ the realm of exoplanet detection.
       accounting for 99.3% of the dataset. This observation underscores the importance of
       adopting appropriate strategies to address class imbalance during model development.
 
-      ![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/81b95687-f32e-4cc3-9e32-84cac0e5ff12)
+![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/81b95687-f32e-4cc3-9e32-84cac0e5ff12)
 
-      Figure 3. Correlation in the data
+Figure 3. Correlation in the data
       
       ● Additionally, a correlation matrix is examined to elucidate potential relationships
       between different flux readings. However, owing to the independent nature of flux
@@ -312,12 +312,12 @@ the realm of exoplanet detection.
       analyses.
 
       
-      ![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/e7d4c753-9b52-4c98-8827-0a43c783d06c)
+![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/e7d4c753-9b52-4c98-8827-0a43c783d06c)
 
-      ![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/33896172-4f79-4613-83e2-edf247c128a2)
+![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/33896172-4f79-4613-83e2-edf247c128a2)
 
 
-      Figure 4. Distribution of Flux
+Figure 4. Distribution of Flux
       
       ● Further exploration involves a visual inspection of the flux readings for the first row,
       emphasizing periodic patterns across different stars. Clear periodic patterns are observed
@@ -327,9 +327,9 @@ the realm of exoplanet detection.
       still visible, the overall observation suggests the influence of orbiting planets on the light
       intensity curves.
 
-      ![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/25765427-1d63-4abb-b915-7c815a61a36c)
+![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/25765427-1d63-4abb-b915-7c815a61a36c)
 
-      Figure 5. Distribution of Flux for outlier removal
+Figure 5. Distribution of Flux for outlier removal
       
       ● Outliers are observed in the flux distributions and then removed, in order to prevent them
       from negatively influencing the performance.
@@ -342,9 +342,9 @@ the realm of exoplanet detection.
 
    **10.2. Graph Model with Explanation**
 
-      ![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/422728cb-9f5a-45e6-ade9-6b2b28e8be8f)
+ ![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/422728cb-9f5a-45e6-ade9-6b2b28e8be8f)
 
-      Figure 6. Graph Model
+Figure 6. Graph Model
       
       ● In the graphical depiction, the Input Layer is illustrated with 64 neurons, each represented
       by a node. These nodes signify the input features of the model. The activation function
@@ -456,12 +456,12 @@ the realm of exoplanet detection.
       
       ● This crucial step ensures uniformity in feature scales, mitigating the risk of certain
       features exerting undue influence over others during subsequent machine learning model
-      training.
-
-      ![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/7ab0ce85-9331-4143-b7de-4ddfefaab269)
-
-      Figure 6. Exoplanet Dataset Explained Variance
+      training.      
       
+![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/7ab0ce85-9331-4143-b7de-4ddfefaab269)
+
+Figure 6. Exoplanet Dataset Explained Variance
+
       ● Subsequent to feature scaling, dimensionality reduction takes place using Principal
       Component Analysis (PCA), a widely adopted technique in machine learning and
       statistics. PCA transforms the original feature set into uncorrelated variables known as
@@ -543,6 +543,7 @@ commendable performance. The corresponding code performance screenshots are prov
 below for reference.
 
 Performance report:
+
 ● K Nearest Neighbors
 ![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/95bf0fdf-62e2-4475-9846-5b4977550aa5)
 
@@ -562,5 +563,6 @@ Performance report:
 ![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/7d9ac486-84c9-49c0-8f19-4e2fe6e35147)
 
 ● Artificial Neural Network
+
 ![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/d18d6ba8-b19d-4612-835c-e7012a4a48d8)
 
