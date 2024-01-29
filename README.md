@@ -78,30 +78,37 @@ the accuracy, interpretability, and efficiency of exoplanet detection methodolog
 **5. Objectives**
 
 To facilitate clarity, a comprehensive list of project objectives is presented below.
+
    ● Data Preprocessing
       a. Handle missing values and potential outliers in the dataset.
       b. Scale and normalize the values to ensure uniformity and aid in model training.
+      
    ● Model Development and Training
       a. Implementing and training a variety of chosen machine learning and deep learning
       models like K Nearest Neighbors, Logistic Regression, Decision Tree, Random Forest,
       and XGBoost among others.
       b. Train these models on the provided training dataset, optimizing hyperparameters to
       enhance performance.
+      
    ● Evaluation and Model Selection
       a. Evaluate models using appropriate metrics such as accuracy, precision, recall,
       F1-score, and AUC-ROC curve.
       b. Select the best-performing model based on evaluation results for further refinement.
+      
    ● Fine-Tuning and Optimization
       a. Optimize the selected model further for improved accuracy and efficiency.
       b. Experiment with hyperparameters to achieve the best possible outcomes.
+      
    ● Testing and Validation:
       a. Apply the optimized model to the provided test dataset for final validation.
       b. Assess the model's generalizability and performance on unseen data.
+      
    ● Visual Representation:
       a. Develop visualizations to present results, including confusion matrices, ROC curves,
       and feature importance plots.
       b. Create informative and intuitive visuals to aid in the understanding and interpretation
       of the model's performance.
+      
    ● Enhanced model interpretability:
       a. Utilize techniques like Explainable AI (XAI) that shed light on the model's
       decision-making process, thereby ensuring transparency and interpretability.
