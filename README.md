@@ -187,6 +187,7 @@ the realm of exoplanet detection.
          readings and labels indicating the presence or absence of exoplanets.
          ○ Exploratory Data Analysis (EDA) is performed to understand the dataset's
          characteristics, including class distribution, correlation, and flux variations.
+         
       ● Data Preprocessing:
          ○ Missing values are handled, and outliers are detected and removed to enhance the
          quality of the dataset.
@@ -200,16 +201,19 @@ the realm of exoplanet detection.
          transforming the dataset into uncorrelated principal components.
          ○ The number of principal components is determined to retain 90% of the dataset's
          variance, balancing information retention and dimensionality reduction.
+         
       ● Model Building:
          ○ Various machine learning models, including K Nearest Neighbors, Logistic
          Regression, Bernoulli Naive Bayes, Decision Tree, Random Forest, XGBoost,
          and Artificial Neural Network, are implemented and trained.
          ○ Hyperparameter tuning is performed to optimize model performance.
+         
       ● Model Evaluation:
          ○ Models are evaluated using metrics such as accuracy, precision, recall, F1-score,
          and ROC-AUC.
          ○ Comparative analysis is conducted to select the best-performing model.
-         ● Explainability (XAI):
+         
+      ● Explainability (XAI):
          ○ Local Interpretable Model-agnostic Explanations (LIME) and SHAP values are
          employed to interpret predictions, providing insights into the features influencing
          the model's decisions.
@@ -243,18 +247,23 @@ the realm of exoplanet detection.
    
       ● Handling Missing Values: Strategies to deal with missing data were implemented,
       ensuring a comprehensive dataset for model training.
+      
       ● Outlier Detection and Removal: Outliers were identified and addressed to prevent them
       from influencing model training.
+      
       ● Addressing Class Imbalance: Synthetic Minority Over-sampling Technique (SMOTE)
       was utilized to balance the distribution of classes and prevent bias in model predictions.
       SMOTE is particularly advantageous in binary classification problems where one class is
       significantly underrepresented compared to the other. The goal of SMOTE is to balance
       the class distribution by generating synthetic examples of the minority class.
+      
       ● Data Normalization and Scaling: Uniformity in the dataset was ensured by normalizing
       and scaling features, facilitating effective model training. This ensures that all features have a
       consistent scale, preventing certain features from dominating others in machine learning models.
+      
       ● Gaussian Filters for Noise Reduction: Gaussian filters were applied to minimize noise
       in the light intensity curves, enhancing the models' ability to identify meaningful patterns.
+      
       ● Dimensionality Reduction using PCA: Principal Component Analysis (PCA) was
       employed to reduce the dimensionality of the dataset, streamlining computational
       efficiency without compromising predictive power.
@@ -266,19 +275,24 @@ the realm of exoplanet detection.
       ● The dataset under consideration comprises 5087 instances, each characterized by 3198
       features, encompassing flux readings denoted as FLUX.1 to FLUX.3197, along with a
       binary label indicating the presence (1) or absence (0) of exoplanets.
+      
       ● However, a notable observation made is the profound class imbalance within the labels,
       with a substantial majority of instances (5050) classified as non-exoplanets (0), while
       only 37 instances are labeled as exoplanets (1). This imbalance underscores the need for
       cautious model training to prevent potential biases and ensure a fair representation of
       both classes.
+      
       Figure 2. 0: Not Exoplanet; 1: Exoplanet
+      
       ● Visual insights into the label distribution are provided through a countplot and a pie chart,
       shedding light on the disproportionate representation of exoplanet and non-exoplanet
       instances. The visualizations reveal that a mere 0.7% of instances are identified as
       exoplanets, emphasizing the pronounced prevalence of the non-exoplanet class,
       accounting for 99.3% of the dataset. This observation underscores the importance of
       adopting appropriate strategies to address class imbalance during model development.
+      
       Figure 3. Correlation in the data
+      
       ● Additionally, a correlation matrix is examined to elucidate potential relationships
       between different flux readings. However, owing to the independent nature of flux
       measurements at distinct time intervals and the transient characteristics of astronomical
@@ -286,7 +300,9 @@ the realm of exoplanet detection.
       the unique challenges associated with astronomical datasets, where consecutive
       measurements lack direct influence, limiting the applicability of traditional correlation
       analyses.
+      
       Figure 4. Distribution of Flux
+      
       ● Further exploration involves a visual inspection of the flux readings for the first row,
       emphasizing periodic patterns across different stars. Clear periodic patterns are observed
       in all the exoplanet plots, indicating consistent fluctuations in the flux. These patterns are
@@ -294,9 +310,12 @@ the realm of exoplanet detection.
       periodic reductions in the received flux. While some anomalies from detection errors are
       still visible, the overall observation suggests the influence of orbiting planets on the light
       intensity curves.
+      
       Figure 5. Distribution of Flux for outlier removal
+      
       ● Outliers are observed in the flux distributions and then removed, in order to prevent them
       from negatively influencing the performance.
+      
    In conclusion, the dataset exhibited intricate patterns and challenges, including class imbalance
    and the unique characteristics of astronomical data. These nuances necessitated careful
    consideration during model development, where strategies for addressing class imbalance and
@@ -306,19 +325,23 @@ the realm of exoplanet detection.
    **10.2. Graph Model with Explanation**
    
       Figure 6. Graph Model
+      
       ● In the graphical depiction, the Input Layer is illustrated with 64 neurons, each represented
       by a node. These nodes signify the input features of the model. The activation function
       used for these neurons is Rectified Linear Unit (ReLU), denoted as "ReLU" in the
       representation. ReLU introduces non-linearity to the model, allowing it to capture
       complex patterns in the data.
+      
       ● The next layer, referred to as the Hidden Layer, consists of 32 neurons, each again
       depicted by a node. These neurons apply the ReLU activation function, serving as
       intermediaries for transforming the input data. The hidden layer is essential for the model
       to learn intricate patterns and relationships within the data.
+      
       ● Finally, the Output Layer is represented by a single node. This node utilizes the Sigmoid
       activation function, denoted as "Sigmoid" in the graphical representation. The Sigmoid
       function is commonly employed in binary classification tasks as it squashes the output
       between 0 and 1, effectively providing a probability-like score.
+      
    The interconnected nodes and layers signify the flow of information through the neural network.
    Each connection between nodes represents a weighted connection, indicating the strength of the
    relationship. During training, the model adjusts these weights to minimize the difference between
@@ -394,71 +417,93 @@ the realm of exoplanet detection.
       classification scenarios, particularly those involving a significant underrepresentation of
       one class, the Synthetic Minority Over-sampling Technique (SMOTE) is a pivotal
       strategy.
+      
       ● Deployed through the imblearn library, SMOTE systematically generates synthetic
       instances of the minority class, thereby rectifying imbalances in class distribution. This
       augmentation contributes to a more equitable representation of both classes, fostering
       improved model training and performance.
+      
       ● To enhance the interpretability of the dataset's flux readings, Gaussian filters, rooted in
       the Gaussian distribution, are systematically applied. These filters, integral in image
       processing and data analysis, serve to smooth fluctuations and accentuate underlying
       patterns in light intensity curves.
+      
       ● This proves particularly advantageous for discerning periodic patterns associated with
       exoplanet transits, thereby facilitating more accurate model predictions.
+      
       ● Following the preprocessing steps, including SMOTE and Gaussian filtering, attention is
       directed towards feature scaling through standardization.
+      
       ● This crucial step ensures uniformity in feature scales, mitigating the risk of certain
       features exerting undue influence over others during subsequent machine learning model
       training.
+      
       Figure 6. Exoplanet Dataset Explained Variance
+      
       ● Subsequent to feature scaling, dimensionality reduction takes place using Principal
       Component Analysis (PCA), a widely adopted technique in machine learning and
       statistics. PCA transforms the original feature set into uncorrelated variables known as
       principal components, facilitating a reduction in dimensionality while retaining critical
       data variance.
+      
       ● The determination of the optimal number of principal components is guided by the goal
       of retaining 90% of the dataset's variance, striking a balance between information
       retention and dimensionality reduction.
+      
       ● The study then progresses to the application of various machine learning classifiers,
       including k-Nearest Neighbors (KNN), Logistic Regression, Bernoullli Naive Bayes,
       Decision Tree, Random Forest, and XGBoost.
+      
          ○ k-Nearest Neighbors (KNN): Utilizes proximity to k-nearest data points to
          classify new instances, making decisions based on the majority class within its
          neighbors.
+         
          ○ Logistic Regression: A linear model suitable for binary classification, logistic
          regression estimates the probability of an instance belonging to a particular class.
+         
          ○ Bernoulli Naive Bayes: Assumes independence between features, employing
          Bayes' theorem to calculate probabilities and make predictions efficiently.
+         
          ○ Decision Tree: A tree-like model that recursively splits data based on features,
          making decisions through a series of binary choices, ultimately leading to a
          classification.
+         
          ○ Random Forest: An ensemble of decision trees, each trained on a random subset
          of data, collectively contributing to a robust and accurate classification.
+         
          ○ XGBoost: An optimized gradient boosting algorithm that sequentially builds a
          series of weak learners, aiming to correct errors from preceding models and
          improve overall predictive performance.
+         
          ○ Artificial Neural Network (ANN): A computational paradigm modeled after the
          architecture of biological neural networks, comprising interconnected nodes
          arranged in layers, designed to perform sophisticated pattern recognition and
          machine learning tasks through the activation of weighted connections.
+         
       ● A unified evaluation function is systematically defined to comprehensively assess the
       models' performance on a validation set, providing metrics such as accuracy, precision,
       recall, and F1-score. The outcomes are meticulously presented, affording a holistic
       analysis of each model's efficacy in handling the intricacies of the given dataset.
+      
       ● In the pursuit of enhancing the efficacy of machine learning models for exoplanet
       detection within the given astronomical dataset, the application of Gaussian filters
       emerges as a pivotal preprocessing step with implicit implications for outlier
       management.
+      
       ● The use of Gaussian filters indirectly contributes to the reduction of outlier influence.
       This is achieved through the filters' capacity to smooth out irregular fluctuations and
       accentuate inherent patterns in the flux readings.
+      
       ● The Gaussian filters, rooted in probability theory and applied to the context of image
       processing and data analysis, serve as a valuable tool for noise reduction. By emphasizing
       underlying patterns while mitigating the impact of isolated extreme values, these filters
       play a crucial role in fostering a more accurate representation of the intrinsic
       characteristics of the astronomical data.
+      
       ● While Gaussian filters address outliers indirectly, a more explicit consideration of outlier
       removal tailored to the unique characteristics of astronomical data would fortify the
       preprocessing pipeline.
+      
    In summary, this systematic approach encompasses the strategic mitigation of class imbalance,
    enhancement of feature interpretability, and optimization of model performance, collectively
    contributing to the robustness of binary classification models in the realm of exoplanet detection.
