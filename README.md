@@ -4,7 +4,7 @@ Using deep learning to automate the detection and analysis of exoplanets through
 ![Planet Image](https://i.pinimg.com/originals/03/d1/b8/03d1b89dbb6367781e625452f4146500.jpg)
 
 
-1. Abstract
+**1. Abstract**
 Exploring beyond the confines of our solar system, the investigation of exoplanets stands as an
 exhilarating frontier in astronomical exploration. This project, titled "Automated Exoplanet
 Detection and Analysis," is an endeavor to harness the power of machine learning for the precise
