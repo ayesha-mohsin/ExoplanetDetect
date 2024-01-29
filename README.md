@@ -163,7 +163,9 @@ the realm of exoplanet detection.
 **8. Our Approach**
 
    **8.1. Architecture Diagram**
-   
+
+   ![image](https://github.com/ayesha-mohsin/ExoplanetDetect/assets/78692406/68d3181b-0760-4a1e-952f-495ee75fce92)
+
    The Artificial neural network model, constructed using the Keras library, comprises three layers
    with distinct configurations. The initial layer, a Dense layer with 64 units, employs the Rectified
    Linear Unit (ReLU) activation function, signifying that every neuron is connected to every
