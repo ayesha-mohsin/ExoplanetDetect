@@ -5,6 +5,7 @@ Using deep learning to automate the detection and analysis of exoplanets through
 
 
 **1. Abstract**
+
 Exploring beyond the confines of our solar system, the investigation of exoplanets stands as an
 exhilarating frontier in astronomical exploration. This project, titled "Automated Exoplanet
 Detection and Analysis," is an endeavor to harness the power of machine learning for the precise
@@ -25,7 +26,8 @@ into the characteristics and patterns that define these distant worlds. This aut
 signifies a step forward in the realm of exoplanetary research, paving the way for a more
 efficient and thorough analysis of the vast troves of astronomical data at our disposal.
 
-2. Introduction
+**2. Introduction**
+
 In the vastness of the cosmos, a fundamental question persists: Are we alone? Humanity has
 tirelessly pursued the quest to unravel signs of life beyond our planet. This exploration comprises
 two vital tasks: identifying exoplanets, including those potentially habitable, and studying their
@@ -33,6 +35,7 @@ atmospheric properties through spectroscopy to assess habitability. This project
 initial phase — discovering exoplanets. Historically, this has been a laborious endeavor, resulting
 in the detection of only approximately 4000 exoplanets over two decades. However, leveraging
 machine learning can automate and expedite this process significantly.
+
 Exoplanets, planets beyond our solar system, reveal themselves through a technique known as
 transit photometry. As an exoplanet orbits its host star, it intermittently obstructs a portion of the
 star's light, causing a momentary dip in light intensity. Analyzing the depth and duration of these
@@ -42,7 +45,8 @@ using the Kepler Space Telescope, making it publicly available. This dataset ser
 foundation for automating exoplanet detection through machine learning and deep learning
 techniques.
 
-3. Motivation
+**3. Motivation**
+
 The exploration for exoplanets is a crucial step toward comprehending the possibility of life
 existing beyond Earth. Researchers traditionally faced a slow exoplanet discovery process due to
 the manual analysis of vast and complex astronomical data. Analyzing light curves and detecting
@@ -55,7 +59,8 @@ greatly enhance the ability to identify celestial bodies that may harbor life. T
 by the desire to expedite exoplanet discovery, unlocking a deeper comprehension of our universe
 and the tantalizing possibility of life existing beyond our home planet.
 
-4. Significance
+**4. Significance**
+
 Our project introduces a pioneering approach in the realm of exoplanet detection by seamlessly
 integrating cutting-edge advancements in machine learning while embracing the paradigm of
 Explainable AI (XAI). By implementing techniques that shed light on the model's
@@ -70,7 +75,8 @@ makes informed decisions based on relevant features from the input space. By com
 unique elements, our project stands as a beacon of innovation, promising to significantly advance
 the accuracy, interpretability, and efficiency of exoplanet detection methodologies.
 
-5. Objectives
+**5. Objectives**
+
 To facilitate clarity, a comprehensive list of project objectives is presented below.
    ● Data Preprocessing
    a. Handle missing values and potential outliers in the dataset.
@@ -100,7 +106,8 @@ To facilitate clarity, a comprehensive list of project objectives is presented b
    a. Utilize techniques like Explainable AI (XAI) that shed light on the model's
    decision-making process, thereby ensuring transparency and interpretability.
 
-6. Features
+**6. Features**
+
 The different features or modules which will be implemented in the project are as follows:
    1. Pre-processing:
    ● Handling missing values in the dataset.
@@ -117,7 +124,8 @@ The different features or modules which will be implemented in the project are a
    ● Creation of visual representations illustrating model predictions on light curves, aiding in
    a clear understanding of the detection process.
 
-7. Literature Survey
+**7. Literature Survey**
+
 The first paper chosen for the literature survey was "Automated Identification of Transiting
 Exoplanet Candidates in NASA Transiting Exoplanet Survey Satellite (TESS) Data with
 Machine Learning Methods”[1] - Leon Ofman et al. In this study by Ofman et al., a novel AI
@@ -141,8 +149,10 @@ data and an accuracy of 0.98 for TESS data. The method's ability to predict plan
 without requiring folded or secondary views of the light curves makes it a promising approach in
 the realm of exoplanet detection.
 
-8. Our Approach
-   8.1. Architecture Diagram
+**8. Our Approach**
+
+   **8.1. Architecture Diagram**
+   
    The Artificial neural network model, constructed using the Keras library, comprises three layers
    with distinct configurations. The initial layer, a Dense layer with 64 units, employs the Rectified
    Linear Unit (ReLU) activation function, signifying that every neuron is connected to every
@@ -156,7 +166,8 @@ the realm of exoplanet detection.
    dense interconnected layers and well-suited activation functions for efficient feature extraction
    and representation.
    
-   8.2. Workflow Diagram
+   **8.2. Workflow Diagram**
+   
    The workflow of the model involves a systematic pipeline to address the challenges and
    intricacies of exoplanet detection:
       ● Data Loading and Exploration:
@@ -194,8 +205,9 @@ the realm of exoplanet detection.
    detection, addressing data challenges and leveraging explainability techniques for model
    interpretation.
    
-9. Dataset
-   9.1. Dataset Description
+**9. Dataset**
+   **9.1. Dataset Description**
+   
    The Kepler Dataset, sourced from NASA, encompasses flux data from more than 3000 stars,
    each classified based on whether they host an exoplanet. Although planets themselves don't emit
    light, their host stars do. Continuous observation of these stars over months or years might reveal
@@ -203,6 +215,7 @@ the realm of exoplanet detection.
    celestial body orbiting the star, rendering it a 'candidate' system. Additional scrutiny, possibly
    through a satellite capturing light at different wavelengths, can further confirm the candidacy of
    these systems.
+   
    The dataset comprises 5088 rows and 3198 columns, each representing light flux measurements
    for exoplanet detection. Each row contains 3197 flux values. This analysis aims to scrutinize
    Kepler mission data to pinpoint potentially habitable exoplanets. Each star is labeled with a
@@ -211,7 +224,8 @@ the realm of exoplanet detection.
    
    Figure 1. NASA Kepler Flux Intensity Dataset Snippet
    
-   9.2. Detailed Design of Features
+   **9.2. Detailed Design of Features**
+   
    During the initial phase, the steps involved in feature engineering and data preprocessing
    implemented are as outlined below.
       ● Handling Missing Values: Strategies to deal with missing data were implemented,
@@ -232,8 +246,9 @@ the realm of exoplanet detection.
       employed to reduce the dimensionality of the dataset, streamlining computational
       efficiency without compromising predictive power.
    
-10. Analysis of Data
-   10.1. Data Pre-Processing
+**10. Analysis of Data**
+   **10.1. Data Pre-Processing**
+   
    ● The dataset under consideration comprises 5087 instances, each characterized by 3198
    features, encompassing flux readings denoted as FLUX.1 to FLUX.3197, along with a
    binary label indicating the presence (1) or absence (0) of exoplanets.
@@ -274,7 +289,8 @@ the realm of exoplanet detection.
    accounting for the independent nature of astronomical observations were pivotal for constructing
    a robust predictive model.
 
-   10.2. Graph Model with Explanation
+   **10.2. Graph Model with Explanation**
+   
       Figure 6. Graph Model
       ● In the graphical depiction, the Input Layer is illustrated with 64 neurons, each represented
       by a node. These nodes signify the input features of the model. The activation function
@@ -296,8 +312,9 @@ the realm of exoplanet detection.
    architecture, showcasing its ability to process input data through layers of interconnected
    neurons with specific activation functions.
 
-11. Implementation
-   11.1. Pseudocode
+**11. Implementation**
+   **11.1. Pseudocode**
+   
    The following pseudocode provides a high-level overview of the steps involved in the project.
       # Exoplanet Detection Pseudocode
       # Step 1: Initialize Project Setup
@@ -356,7 +373,8 @@ the realm of exoplanet detection.
       # Display validation accuracy for each model
       Conclude the project and discuss findings
     
-   11.2. Implementation Details
+   **11.2. Implementation Details**
+   
       ● In the context of addressing the inherent challenge of class imbalance in binary
       classification scenarios, particularly those involving a significant underrepresentation of
       one class, the Synthetic Minority Over-sampling Technique (SMOTE) is a pivotal
@@ -432,7 +450,8 @@ the realm of exoplanet detection.
    This multifaceted methodology aligns with contemporary research standards, ensuring a rigorous
    and comprehensive exploration of the dataset and the subsequent model outcomes.
    
-12. Results
+**12. Results**
+
 Following the analysis of the second increment, the outcomes are as follows: All models
 displayed exemplary results in terms of accuracy, precision, recall, and F1-score, showcasing
 robust predictive capabilities. K Nearest Neighbors, Logistic Regression, Decision Tree, Random
