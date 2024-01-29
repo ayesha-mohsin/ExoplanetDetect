@@ -110,19 +110,21 @@ To facilitate clarity, a comprehensive list of project objectives is presented b
 
 The different features or modules which will be implemented in the project are as follows:
    1. Pre-processing:
-   ● Handling missing values in the dataset.
-   ● Scaling the features, using techniques like Standardization.
+      
+      ● Handling missing values in the dataset.
+      ● Scaling the features, using techniques like Standardization.
    2. Model Training:
-   ● Implementing and training a variety of chosen machine learning and deep learning
-   models like K Nearest Neighbors, Logistic Regression, Decision Tree, Random Forest,
-   and XGBoost among others.
-   ● Hyperparameter tuning to optimize model performance.
+
+      ● Implementing and training a variety of chosen machine learning and deep learning
+      models like K Nearest Neighbors, Logistic Regression, Decision Tree, Random Forest,
+      and XGBoost among others.
+      ● Hyperparameter tuning to optimize model performance.      
    3. Evaluation:
-   ● Assessing models using appropriate metrics like accuracy, precision, recall, F1-score, and
-   AUC-ROC.
-   ● Comparing models and selecting the best-performing one.
-   ● Creation of visual representations illustrating model predictions on light curves, aiding in
-   a clear understanding of the detection process.
+      ● Assessing models using appropriate metrics like accuracy, precision, recall, F1-score, and
+      AUC-ROC.
+      ● Comparing models and selecting the best-performing one.
+      ● Creation of visual representations illustrating model predictions on light curves, aiding in
+      a clear understanding of the detection process.
 
 **7. Literature Survey**
 
